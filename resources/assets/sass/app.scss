@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&subset=cyrillic-ext');
+// BOOTSTRAP
+@import "./_bootstrap/bootstrap-reboot";
+@import "./_bootstrap/bootstrap-grid";
+@import "./_bootstrap/forms";
+//@import "./_bootstrap/buttons";
+@import "./_bootstrap/alert";
+@import "./_bootstrap/type";
+@import "./_bootstrap/pagination";
+@import "./_bootstrap/modal";
+@import "./_bootstrap/dropdown";
+@import "./_bootstrap/close";
+@import "./_bootstrap/utilities";
+
+* {
+  outline: none !important;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+body {
+  padding: 0;
+  background: #fff;
+  font-family: 'Montserrat', sans-serif !important;
+  font-size: .85rem !important;
+  -webkit-font-smoothing: subpixel-antialiased !important;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  text-rendering: geometricPrecision !important;
+}
+
+// HEADER >> ==========================================================================================================/
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: transparent;
+  //background: linear-gradient(90deg, #00a9e2, #007ae0);
+  //background: linear-gradient(to left, #9074fe 0%, #5268d2 100%);
+  padding: 1rem 0;
+  width: 100%;
+  line-height: 3rem;
+  //box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.05);
+  z-index: 100;
+  &__brand {
+    display: inline-block;
+    float: left;
+    padding: 0;
+    margin: .5rem 0;
+    width: 13rem;
+    height: 2rem;
+    cursor: pointer;
+    & svg .pink {
+      fill: #fff200;
+      -moz-transition: all 0.2s;
+      -o-transition: all 0.2s;
+      -webkit-transition: all 0.2s;
+      transition: all 0.2s;
+    }
+    & svg .black {
+      fill: #fff;
+      -moz-transition: all 0.2s;
+      -o-transition: all 0.2s;
+      -webkit-transition: all 0.2s;
+      transition: all 0.2s;
+    }
+  }
+  &__tagline {
+    display: inline-block;
+    float: left;
+    padding: 0;
+    margin: .5rem 0 .5rem .5rem;
+    font-size: .85rem;
+    color: #fff;
+    line-height: 1rem;
+    text-transform: uppercase;
+  }
+  &__contacts {
+    float: right;
+    margin: .5rem;
+    color: #fff !important;
+    line-height: 1rem;
+    & svg {
+      float: left;
+    }
+  }
+  &__phone {
+    float: left;
+    &--callback {
+      float: left;
+    }
+  }
+}
+
+// SECTIONS >> =========================================================================================================/
+.section {
+  margin: 0;
+  padding: 3rem 0;
+  width: 100%;
+  min-height: 700px;
+
+  &-main {
+    //background: linear-gradient(to top left, rgb(116, 93, 208) 0%, rgba(60, 77, 158, 0.65) 100%), url('./img/support_bg.jpg');
+    background: linear-gradient(to top left, rgb(116, 93, 208) 0%, rgba(10, 24, 88, 0.64) 100%), url('./img/support_bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    &__h1 {
+      margin: 5rem 0 0;
+      color: #fff;
+      font-weight: 700;
+    }
+    &__text {
+      color: #f6f4ff;
+      width: 100%;
+    }
+  }
+}
+
+// FOOTER >> ==========================================================================================================/
+.footer {
+  background: linear-gradient(to top left, rgb(51, 66, 99) 0%, rgba(10, 24, 88, 0.64) 100%), url('./img/support_bg.jpg');
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: cover;
+  margin-top: 20rem;
+  padding-top: 200px;
+
+  &__copyright {
+    border-top: 1px Solid rgba(255, 255, 255, 0.1);
+    color: #707a9c;
+    line-height: 3rem;
+    transition: all 0.3s;
+    &:hover {
+      color: #fff;
+    }
+  }
+}
+
+// BUTTONS >> =========================================================================================================/
+.btn {
+  display: inline-block;
+  border: 1px Solid transparent;
+  background: transparent;
+  margin: 0;
+  padding: .7rem 2rem;
+  font-weight: 500;
+  letter-spacing: .1rem;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  text-transform: uppercase;
+  border-radius: 2em;
+  transition: all .3s;
+  &:hover {
+    opacity: .9;
+  }
+
+  &-main {
+    border: 1px Solid #0093ff;
+    background: #0093ff;
+    color: #fff;
+    box-shadow: 0 0.5rem 2rem 0 rgba(0, 117, 255, 0.2)
+  }
+  &-transparent {
+    border: none;
+    color: #0093ff;
+    //box-shadow: 0 0.5rem 2rem 0 rgba(0, 63, 255, 0.2);
+    &:hover {
+      background: #0093ff;
+      color: #fff;
+    }
+  }
+}
+
+// HELPERS >> =========================================================================================================/
+.no {
+  &-margin {
+    margin: 0 !important;
+  }
+  &-padding {
+    padding: 0 !important;
+  }
+}
