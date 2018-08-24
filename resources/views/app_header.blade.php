@@ -26,7 +26,7 @@
             </svg>
             <div class="header__contacts-block d-none d-md-block">
                 <span class="header__contacts-phone d-block">+7 495 455-33-99</span>
-                <a href="#" class="header__contacts-callback ajax" data-toggle="modal" data-name="Войти" data-modal-size="modal-sm">Обратный звонок</a>
+                <a href="#" class="header__contacts-callback">Обратный звонок</a>
             </div>
         </div>
     </div>
