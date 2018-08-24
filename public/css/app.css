@@ -7871,8 +7871,9 @@ body {
 }
 
 .section-main__text {
+  margin: 0 0 2rem;
   color: #f6f4ff;
-  width: 100%;
+  width: 60%;
 }
 
 .footer {
@@ -7976,6 +7977,11 @@ body {
   .section-main__h1 {
     margin: 5rem 0 1rem;
     font-size: 2rem;
+  }
+
+  .section-main__text {
+    margin: 0 0 2rem;
+    width: 100%;
   }
 }
 

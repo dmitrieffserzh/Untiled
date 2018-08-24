@@ -139,8 +139,9 @@ body {
       font-weight: 700;
     }
     &__text {
+      margin: 0 0 2rem;
       color: #f6f4ff;
-      width: 100%;
+      width: 60%;
     }
   }
 }
@@ -244,6 +245,10 @@ body {
       &__h1 {
         margin: 5rem 0 1rem;
         font-size: 2rem;
+      }
+      &__text {
+        margin: 0 0 2rem;
+        width: 100%;
       }
     }
   }
