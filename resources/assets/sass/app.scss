@@ -228,16 +228,16 @@ body {
       }
     }
     &__contacts {
+      margin: .5rem 0;
       & svg {
         height: 1.5rem;
       }
     }
     &--scroll {
       background: rgba(25, 44, 80, 0.9);
-      padding: .5rem 0;
+      padding: .2rem 0;
     }
   }
-
   // SECTIONS
   .section {
     &-main {
@@ -247,5 +247,4 @@ body {
       }
     }
   }
-
 }

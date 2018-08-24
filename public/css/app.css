@@ -7960,13 +7960,17 @@ body {
     height: 1.5rem;
   }
 
+  .header__contacts {
+    margin: .5rem 0;
+  }
+
   .header__contacts svg {
     height: 1.5rem;
   }
 
   .header--scroll {
     background: rgba(25, 44, 80, 0.9);
-    padding: .5rem 0;
+    padding: .2rem 0;
   }
 
   .section-main__h1 {

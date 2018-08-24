@@ -16,7 +16,7 @@
             Digital<br>marketing agency
         </div>
 
-        <div class="header__contacts">
+        <div class="header__contacts ajax" data-toggle="modal" data-name="Войти" data-modal-size="modal-sm">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
                  stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"
                  class="feather feather-phone-incoming">
@@ -31,8 +31,3 @@
         </div>
     </div>
 </header>
-
-
-<a href="https://womensay.ru/login" class="ajax auth-menu__link" data-toggle="modal" data-url="https://womensay.ru/login" data-name="Обратный звонок">
-
-</a>
