@@ -7865,7 +7865,7 @@ body {
 }
 
 .section-main__h1 {
-  margin: 5rem 0 0;
+  margin: 5rem 0 1rem;
   color: #fff;
   font-weight: 700;
 }
@@ -7942,5 +7942,36 @@ body {
 
 .no-padding {
   padding: 0 !important;
+}
+
+@media (max-width: 767px) {
+  .header {
+    line-height: 3rem;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+    z-index: 100;
+  }
+
+  .header__brand {
+    height: 1.5rem;
+  }
+
+  .header__brand svg {
+    height: 1.5rem;
+  }
+
+  .header__contacts svg {
+    height: 1.5rem;
+  }
+
+  .header--scroll {
+    background: rgba(25, 44, 80, 0.9);
+    padding: .5rem 0;
+  }
+
+  .section-main__h1 {
+    margin: 5rem 0 1rem;
+    font-size: 2rem;
+  }
 }
 
