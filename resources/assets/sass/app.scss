@@ -44,6 +44,7 @@ body {
   padding: 1rem 0;
   width: 100%;
   line-height: 3rem;
+  transition: all 0.2s;
   //box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.05);
   z-index: 100;
   &__brand {
@@ -51,9 +52,12 @@ body {
     float: left;
     padding: 0;
     margin: .5rem 0;
-    width: 13rem;
     height: 2rem;
     cursor: pointer;
+    & svg {
+      float: left;
+      height: 2rem;
+    }
     & svg .pink {
       fill: #fff200;
       -moz-transition: all 0.2s;
@@ -73,10 +77,10 @@ body {
     display: inline-block;
     float: left;
     padding: 0;
-    margin: .5rem 0 .5rem .5rem;
-    font-size: .85rem;
+    margin: .4rem 0 .4rem .5rem;
+    font-size: 1rem;
     color: #fff;
-    line-height: 1rem;
+    line-height: 1.15rem;
     text-transform: uppercase;
   }
   &__contacts {
@@ -86,13 +90,32 @@ body {
     line-height: 1rem;
     & svg {
       float: left;
+      height: 2rem;
+    }
+    &-block {
+      float: left;
+      margin-left: .8rem;
+    }
+    &-phone {
+      font-weight: 500;
+      font-size: 1.3rem;
+    }
+    &-callback {
+      color: #fff;
+      float: right;
+      font-size: .8rem;
+      font-variant: small-caps;
+      text-transform: lowercase;
+      letter-spacing: .1rem;
+      transition: all 0.3s;
+      &:hover {
+        color: #ffe200;
+      }
     }
   }
-  &__phone {
-    float: left;
-    &--callback {
-      float: left;
-    }
+  &--scroll {
+    background: rgba(25, 44, 80, 0.9);
+    padding: .5rem 0;
   }
 }
 
@@ -105,7 +128,8 @@ body {
 
   &-main {
     //background: linear-gradient(to top left, rgb(116, 93, 208) 0%, rgba(60, 77, 158, 0.65) 100%), url('./img/support_bg.jpg');
-    background: linear-gradient(to top left, rgb(116, 93, 208) 0%, rgba(10, 24, 88, 0.64) 100%), url('./img/support_bg.jpg');
+    //background: linear-gradient(to top left, rgb(116, 93, 208) 0%, rgba(10, 24, 88, 0.64) 100%), url('./img/support_bg.jpg');
+    background: linear-gradient(to top left, rgb(51, 66, 99) 0%, rgba(10, 24, 88, 0.64) 100%), url('./img/support_bg.jpg');
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;

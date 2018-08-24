@@ -7765,6 +7765,8 @@ body {
   padding: 1rem 0;
   width: 100%;
   line-height: 3rem;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
   z-index: 100;
 }
 
@@ -7773,9 +7775,13 @@ body {
   float: left;
   padding: 0;
   margin: .5rem 0;
-  width: 13rem;
   height: 2rem;
   cursor: pointer;
+}
+
+.header__brand svg {
+  float: left;
+  height: 2rem;
 }
 
 .header__brand svg .pink {
@@ -7794,10 +7800,10 @@ body {
   display: inline-block;
   float: left;
   padding: 0;
-  margin: .5rem 0 .5rem .5rem;
-  font-size: .85rem;
+  margin: .4rem 0 .4rem .5rem;
+  font-size: 1rem;
   color: #fff;
-  line-height: 1rem;
+  line-height: 1.15rem;
   text-transform: uppercase;
 }
 
@@ -7810,14 +7816,37 @@ body {
 
 .header__contacts svg {
   float: left;
+  height: 2rem;
 }
 
-.header__phone {
+.header__contacts-block {
   float: left;
+  margin-left: .8rem;
 }
 
-.header__phone--callback {
-  float: left;
+.header__contacts-phone {
+  font-weight: 500;
+  font-size: 1.3rem;
+}
+
+.header__contacts-callback {
+  color: #fff;
+  float: right;
+  font-size: .8rem;
+  font-variant: small-caps;
+  text-transform: lowercase;
+  letter-spacing: .1rem;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.header__contacts-callback:hover {
+  color: #ffe200;
+}
+
+.header--scroll {
+  background: rgba(25, 44, 80, 0.9);
+  padding: .5rem 0;
 }
 
 .section {
@@ -7828,8 +7857,8 @@ body {
 }
 
 .section-main {
-  background: -webkit-gradient(linear, right bottom, left top, from(#745dd0), to(rgba(10, 24, 88, 0.64))), url(/images/support_bg.jpg?2a8f320fdbd50071d68edf98dc2c80b7);
-  background: linear-gradient(to top left, #745dd0 0%, rgba(10, 24, 88, 0.64) 100%), url(/images/support_bg.jpg?2a8f320fdbd50071d68edf98dc2c80b7);
+  background: -webkit-gradient(linear, right bottom, left top, from(#334263), to(rgba(10, 24, 88, 0.64))), url(/images/support_bg.jpg?2a8f320fdbd50071d68edf98dc2c80b7);
+  background: linear-gradient(to top left, #334263 0%, rgba(10, 24, 88, 0.64) 100%), url(/images/support_bg.jpg?2a8f320fdbd50071d68edf98dc2c80b7);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
