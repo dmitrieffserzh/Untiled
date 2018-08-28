@@ -7751,6 +7751,7 @@ h4,
 h5,
 h6 {
   color: #000;
+  text-transform: uppercase;
 }
 
 body {
@@ -7805,17 +7806,6 @@ body {
   transition: all 0.2s;
 }
 
-.header__tagline {
-  display: inline-block;
-  float: left;
-  padding: 0;
-  margin: .4rem 0 .4rem .5rem;
-  font-size: 1rem;
-  color: #fff;
-  line-height: 1.15rem;
-  text-transform: uppercase;
-}
-
 .header__contacts {
   float: right;
   margin: .5rem;
@@ -7844,7 +7834,7 @@ body {
   color: #fff;
   float: right;
   width: 100%;
-  font-size: .5rem;
+  font-size: .7rem;
   text-transform: uppercase;
   letter-spacing: .1rem;
   -webkit-transition: all 0.3s;
@@ -7857,7 +7847,7 @@ body {
 }
 
 .header--scroll {
-  background: rgba(0, 0, 0, 0.9);
+  background: #3d465a;
   padding: .5rem 0;
 }
 
@@ -7880,8 +7870,8 @@ body {
 }
 
 .section-main {
-  background: -webkit-gradient(linear, right bottom, left top, from(#334263), to(rgba(10, 24, 88, 0.64))), url(/images/support_bg.jpg?2a8f320fdbd50071d68edf98dc2c80b7);
-  background: linear-gradient(to top left, #334263 0%, rgba(10, 24, 88, 0.64) 100%), url(/images/support_bg.jpg?2a8f320fdbd50071d68edf98dc2c80b7);
+  background: -webkit-gradient(linear, right bottom, left top, from(#334263), to(rgba(10, 24, 88, 0.64))), url(/images/support_bg_blur.jpg?685a990fbef8aa385359617c0e4955a3);
+  background: linear-gradient(to top left, #334263 0%, rgba(10, 24, 88, 0.64) 100%), url(/images/support_bg_blur.jpg?685a990fbef8aa385359617c0e4955a3);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -7900,8 +7890,8 @@ body {
 }
 
 .footer {
-  background: -webkit-gradient(linear, right bottom, left top, from(#334263), to(rgba(10, 24, 88, 0.64))), url(/images/support_bg.jpg?2a8f320fdbd50071d68edf98dc2c80b7);
-  background: linear-gradient(to top left, #334263 0%, rgba(10, 24, 88, 0.64) 100%), url(/images/support_bg.jpg?2a8f320fdbd50071d68edf98dc2c80b7);
+  background: -webkit-gradient(linear, right bottom, left top, from(#334263), to(rgba(10, 24, 88, 0.64))), url(/images/support_bg_blur.jpg?685a990fbef8aa385359617c0e4955a3);
+  background: linear-gradient(to top left, #334263 0%, rgba(10, 24, 88, 0.64) 100%), url(/images/support_bg_blur.jpg?685a990fbef8aa385359617c0e4955a3);
   background-repeat: no-repeat;
   background-position: bottom center;
   background-size: cover;
@@ -7977,15 +7967,38 @@ body {
     display: block;
     position: fixed;
     bottom: -5rem;
+    padding: .5rem;
     background: #fff;
     width: 100%;
     text-align: center;
-    line-height: 3rem;
+    line-height: 2.6rem;
     visibility: hidden;
     -webkit-transition: all .3s;
     transition: all .3s;
     -webkit-box-shadow: 0 0 0.5rem 0 rgba(0, 0, 0, 0.15);
             box-shadow: 0 0 0.5rem 0 rgba(0, 0, 0, 0.15);
+  }
+
+  .callback-widget .btn-call {
+    display: block;
+    border: 1px Solid #00e814;
+    padding: 0 0rem;
+    background: #00e814;
+    color: #fff;
+    width: 100%;
+    -webkit-box-shadow: 0 0.5rem 2rem 0 rgba(0, 255, 38, 0.2);
+            box-shadow: 0 0.5rem 2rem 0 rgba(0, 255, 38, 0.2);
+  }
+
+  .callback-widget .btn-write {
+    display: block;
+    border: 1px Solid #0093ff;
+    padding: 0 0rem;
+    background: #0093ff;
+    color: #fff;
+    width: 100%;
+    -webkit-box-shadow: 0 0.5rem 2rem 0 rgba(0, 44, 255, 0.2);
+            box-shadow: 0 0.5rem 2rem 0 rgba(0, 44, 255, 0.2);
   }
 
   .callback-widget svg {

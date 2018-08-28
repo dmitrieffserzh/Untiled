@@ -22,6 +22,7 @@ a {
 
 h1, h2, h3, h4, h5, h6 {
   color: #000;
+  text-transform: uppercase;
 }
 
 body {
@@ -77,16 +78,6 @@ body {
       transition: all 0.2s;
     }
   }
-  &__tagline {
-    display: inline-block;
-    float: left;
-    padding: 0;
-    margin: .4rem 0 .4rem .5rem;
-    font-size: 1rem;
-    color: #fff;
-    line-height: 1.15rem;
-    text-transform: uppercase;
-  }
   &__contacts {
     float: right;
     margin: .5rem;
@@ -110,7 +101,7 @@ body {
       color: #fff;
       float: right;
       width: 100%;
-      font-size: .5rem;
+      font-size: .7rem;
       text-transform: uppercase;
       letter-spacing: .1rem;
       transition: all 0.3s;
@@ -121,7 +112,7 @@ body {
     }
   }
   &--scroll {
-    background: rgba(0, 0, 0, 0.9);
+    background: rgb(61, 70, 90);
     padding: .5rem 0;
   }
 }
@@ -146,7 +137,7 @@ body {
   &-main {
     //background: linear-gradient(to top left, rgb(116, 93, 208) 0%, rgba(60, 77, 158, 0.65) 100%), url('./img/support_bg.jpg');
     //background: linear-gradient(to top left, rgb(116, 93, 208) 0%, rgba(10, 24, 88, 0.64) 100%), url('./img/support_bg.jpg');
-    background: linear-gradient(to top left, rgb(51, 66, 99) 0%, rgba(10, 24, 88, 0.64) 100%), url('./img/support_bg.jpg');
+    background: linear-gradient(to top left, rgb(51, 66, 99) 0%, rgba(10, 24, 88, 0.64) 100%), url('./img/support_bg_blur.jpg');
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -165,7 +156,7 @@ body {
 
 // FOOTER >> ==========================================================================================================/
 .footer {
-  background: linear-gradient(to top left, rgb(51, 66, 99) 0%, rgba(10, 24, 88, 0.64) 100%), url('./img/support_bg.jpg');
+  background: linear-gradient(to top left, rgb(51, 66, 99) 0%, rgba(10, 24, 88, 0.64) 100%), url('./img/support_bg_blur.jpg');
   background-repeat: no-repeat;
   background-position: bottom center;
   background-size: cover;
@@ -248,19 +239,31 @@ body {
     display: block;
     position: fixed;
     bottom: -5rem;
+    padding: .5rem;
     background: #fff;
     width: 100%;
     text-align: center;
-    line-height: 3rem;
+    line-height: 2.6rem;
     visibility: hidden;
     transition: all .3s;
     box-shadow: 0 0 .5rem 0 rgba(0, 0, 0, 0.15);
     & .btn-call {
       display: block;
-      border: 1px Solid #ff0063;
-      background: #ff0063;
+      border: 1px Solid #00e814;
+      padding: 0 0rem;
+      background: #00e814;
       color: #fff;
-      box-shadow: 0 0.5rem 2rem 0 rgba(255, 0, 121, 0.2);
+      width: 100%;
+      box-shadow: 0 0.5rem 2rem 0 rgba(0, 255, 38, 0.2);
+    }
+    & .btn-write {
+      display: block;
+      border: 1px Solid #0093ff;
+      padding: 0 0rem;
+      background: #0093ff;
+      color: #fff;
+      width: 100%;
+      box-shadow: 0 0.5rem 2rem 0 rgba(0, 44, 255, 0.2);
     }
     & svg {
       display: inline-block;
