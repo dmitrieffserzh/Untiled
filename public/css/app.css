@@ -8042,8 +8042,14 @@ body {
   }
 
   .header--scroll {
-    background: rgba(0, 0, 0, 0.9);
+    background: #fff;
     padding: .2rem 0;
+  }
+
+  .header--scroll svg .black {
+    fill: #000;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
   }
 
   .main-action__input {

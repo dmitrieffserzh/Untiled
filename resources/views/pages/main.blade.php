@@ -16,10 +16,16 @@
 
     <section class="section">
         <div class="container">
-            <h2 class="section__h2">Услуги</h2>
+            <h2 class="section__h2">Наши услуги</h2>
 
             <button type="button" class="btn btn-main">Оставить заявку</button>
         </div>
     </section>
+<section class="section">
+    <div class="container">
+        <h2 class="section__h2">Отзывы</h2>
 
+
+    </div>
+</section>
 @endsection
