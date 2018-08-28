@@ -42,6 +42,23 @@ $(function () {
 });
 
 
+$(function () {
+
+    var sectionHeight = $('.section-main').height() / 2;
+
+    $(window).scroll(function () {
+        if($(window).scrollTop() > sectionHeight) {
+            $('.callback-widget').addClass('callback-widget--active')
+        } else {
+            $('.callback-widget').removeClass('callback-widget--active')
+        }
+    })
+
+});
+
+
+
+
 
 // MODAL WINDOW
 $(function () {

@@ -20,6 +20,10 @@ a {
   text-decoration: none !important;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  color: #000;
+}
+
 body {
   padding: 0;
   background: #fff;
@@ -59,7 +63,7 @@ body {
       height: 2rem;
     }
     & svg .pink {
-      fill: #fff200;
+      fill: #ff0063;
       -moz-transition: all 0.2s;
       -o-transition: all 0.2s;
       -webkit-transition: all 0.2s;
@@ -97,28 +101,41 @@ body {
       margin-left: .8rem;
     }
     &-phone {
+      width: 100%;
       font-weight: 500;
       font-size: 1.3rem;
+      text-align: right;
     }
     &-callback {
       color: #fff;
       float: right;
-      font-size: .8rem;
-      font-variant: small-caps;
-      text-transform: lowercase;
+      width: 100%;
+      font-size: .5rem;
+      text-transform: uppercase;
       letter-spacing: .1rem;
       transition: all 0.3s;
+      text-align: right;
       &:hover {
         color: #ffe200;
       }
     }
   }
   &--scroll {
-    background: rgba(25, 44, 80, 0.9);
+    background: rgba(0, 0, 0, 0.9);
     padding: .5rem 0;
   }
 }
-
+.main-action {
+  &__input {
+    float: left;
+    border: 1px Solid #fff;
+    padding: .7rem 1rem;
+    border-radius: 2rem;
+  }
+  & .btn-main {
+    margin: 0 0 0 -3rem;
+  }
+}
 // SECTIONS >> =========================================================================================================/
 .section {
   margin: 0;
@@ -173,23 +190,27 @@ body {
   background: transparent;
   margin: 0;
   padding: .7rem 2rem;
-  font-weight: 500;
+  //font-weight: 500;
   letter-spacing: .1rem;
   text-align: center;
   white-space: nowrap;
   vertical-align: middle;
   text-transform: uppercase;
-  border-radius: 2em;
+  border-radius: 2rem;
   transition: all .3s;
   &:hover {
-    opacity: .9;
+    //opacity: .9;
   }
 
   &-main {
-    border: 1px Solid #0093ff;
-    background: #0093ff;
+    border: 1px Solid #ff0063;
+    background: #ff0063;
     color: #fff;
-    box-shadow: 0 0.5rem 2rem 0 rgba(0, 117, 255, 0.2)
+    box-shadow: 0 0.5rem 2rem 0 rgba(255, 0, 121, 0.2);
+    &:hover {
+      border-color: #ff0063;
+      background: #ff0063;
+    }
   }
   &-transparent {
     border: none;
@@ -201,6 +222,9 @@ body {
     }
   }
 }
+
+
+
 
 // HELPERS >> =========================================================================================================/
 .no {
@@ -214,10 +238,40 @@ body {
 
 
 
+// MOBILE WIDGETS >> ==================================================================================================/
+.callback-widget {
+  display: none;
+}
 
+@media (max-width: 767px) {
+  .callback-widget {
+    display: block;
+    position: fixed;
+    bottom: -5rem;
+    background: #fff;
+    width: 100%;
+    text-align: center;
+    line-height: 3rem;
+    visibility: hidden;
+    transition: all .3s;
+    box-shadow: 0 0 .5rem 0 rgba(0, 0, 0, 0.15);
+    & svg {
+      display: inline-block;
+      vertical-align: middle;
+      height: 1.5rem;
+    }
+    &--active {
+      bottom: 0rem;
+      visibility: visible;
+    }
+  }
+}
 
 // MEDIA QUERIES >> ===================================================================================================/
 @media (max-width: 767px) {
+  body {
+    padding-bottom: 3rem;
+  }
   .header {
     line-height: 3rem;
     transition: all 0.2s;
@@ -235,13 +289,31 @@ body {
       }
     }
     &--scroll {
-      background: rgba(25, 44, 80, 0.9);
+      background: rgba(0, 0, 0, 0.9);
       padding: .2rem 0;
+    }
+  }
+  .main-action {
+    &__input {
+      float: left;
+      border: 1px Solid #fff;
+      padding: .7rem 1rem;
+      margin: 0 10%;
+      width: 80%;
+      text-align: center;
+      border-radius: .3rem .3rem 0 0;
+    }
+    & .btn-main {
+      margin: 0 10%;
+      width: 80%;
+      font-weight: normal !important;
+      border-radius: 0 0 .3rem .3rem;
     }
   }
   // SECTIONS
   .section {
     &-main {
+      text-align: center;
       &__h1 {
         margin: 12rem 0 1rem;
         font-size: 2rem;
