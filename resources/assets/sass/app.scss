@@ -255,6 +255,13 @@ body {
     visibility: hidden;
     transition: all .3s;
     box-shadow: 0 0 .5rem 0 rgba(0, 0, 0, 0.15);
+    & .btn-call {
+      display: block;
+      border: 1px Solid #ff0063;
+      background: #ff0063;
+      color: #fff;
+      box-shadow: 0 0.5rem 2rem 0 rgba(255, 0, 121, 0.2);
+    }
     & svg {
       display: inline-block;
       vertical-align: middle;
