@@ -54,7 +54,7 @@ body {
   padding: 1rem 0;
   width: 100%;
   line-height: 3rem;
-  transition: all 0.2s;
+  transition: all .2s;
   //box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.05);
   z-index: 100;
   &__brand {
@@ -70,17 +70,11 @@ body {
     }
     & svg .pink {
       fill: #ff0063;
-      -moz-transition: all 0.2s;
-      -o-transition: all 0.2s;
-      -webkit-transition: all 0.2s;
-      transition: all 0.2s;
+      transition: all .2s;
     }
     & svg .black {
       fill: #fff;
-      -moz-transition: all 0.2s;
-      -o-transition: all 0.2s;
-      -webkit-transition: all 0.2s;
-      transition: all 0.2s;
+      transition: all .2s;
     }
   }
   &__contacts {
@@ -109,8 +103,8 @@ body {
       font-size: .7rem;
       text-transform: uppercase;
       letter-spacing: .1rem;
-      transition: all 0.3s;
       text-align: right;
+      transition: all .3s;
       &:hover {
         color: #ffe200;
       }
@@ -121,17 +115,19 @@ body {
     padding: .5rem 0;
   }
 }
+
 .main-action {
   &__input {
     float: left;
     border: 1px Solid #fff;
     padding: .7rem 1rem;
-    border-radius: 2rem;
+    border-radius: .2rem;
   }
   & .btn-main {
     margin: 0 0 0 -3rem;
   }
 }
+
 // SECTIONS >> ========================================================================================================/
 .section {
   margin: 0;
@@ -141,8 +137,10 @@ body {
 
   // TITLE SECTIONS
   &-header {
-    &__title {}
-    &__subtitle {}
+    &__title {
+    }
+    &__subtitle {
+    }
   }
 
   // CONTENT SECTIONS
@@ -179,7 +177,7 @@ body {
     border-top: 1px Solid rgba(255, 255, 255, 0.1);
     color: #707a9c;
     line-height: 3rem;
-    transition: all 0.3s;
+    transition: all .3s;
     &:hover {
       color: #fff;
     }
@@ -199,7 +197,7 @@ body {
   white-space: nowrap;
   vertical-align: middle;
   text-transform: uppercase;
-  border-radius: 2rem;
+  border-radius: .2rem;
   transition: all .3s;
   &:hover {
     //opacity: .9;
@@ -209,7 +207,7 @@ body {
     border: 1px Solid #ff0063;
     background: #ff0063;
     color: #fff;
-    box-shadow: 0 0.5rem 2rem 0 rgba(255, 0, 121, 0.2);
+    box-shadow: 0 0 .5rem .2rem rgba(255, 0, 121, 0.2);
     &:hover {
       border-color: #ff0063;
       background: #ff0063;
@@ -226,9 +224,6 @@ body {
   }
 }
 
-
-
-
 // HELPERS >> =========================================================================================================/
 .no {
   &-margin {
@@ -239,7 +234,17 @@ body {
   }
 }
 
-
+.text {
+  &-left {
+    text-align: left
+  }
+  &-center {
+    text-align: center
+  }
+  &-right {
+    text-align: right
+  }
+}
 
 // MOBILE WIDGETS >> ==================================================================================================/
 .callback-widget {
@@ -262,11 +267,11 @@ body {
     & .btn-call {
       display: block;
       border: 1px Solid #00e814;
-      padding: 0 0rem;
+      padding: 0;
       background: #00e814;
       color: #fff;
       width: 100%;
-      box-shadow: 0 0.5rem 2rem 0 rgba(0, 255, 38, 0.2);
+      box-shadow: 0 5rem 2rem 0 rgba(0, 255, 38, 0.2);
     }
     & .btn-write {
       display: block;
@@ -296,7 +301,7 @@ body {
   }
   .header {
     line-height: 3rem;
-    transition: all 0.2s;
+    transition: all .2s;
     z-index: 100;
     &__brand {
       margin: .25rem 0;
@@ -314,17 +319,14 @@ body {
     &--scroll {
       background: #fff;
       padding: .2rem 0;
-      box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.05);
+      box-shadow: 0 0 .25rem .5rem rgba(0, 0, 0, 0.05);
       & svg {
         stroke: #000;
       }
-        & svg .black {
-          fill: #000;
-          -moz-transition: all 0.2s;
-          -o-transition: all 0.2s;
-          -webkit-transition: all 0.2s;
-          transition: all 0.2s;
-        }
+      & svg .black {
+        fill: #000;
+        transition: all 0.2s;
+      }
     }
   }
   .main-action {
@@ -335,7 +337,7 @@ body {
       margin: 0 10%;
       width: 80%;
       text-align: center;
-      border-radius: .3rem .3rem 0 0;
+      border-radius: 0 0 .3rem .3rem;
     }
     & .btn-main {
       margin: 0 10%;

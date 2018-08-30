@@ -14,12 +14,11 @@
     </div>
 </section>
 
-
 <section class="section">
     <div class="container">
 
         <header class="section-header">
-            <h2 class="section-header__title">Отзывы</h2>
+            <h2 class="section-header__title">Наши услуги</h2>
             <p class="section-header__subtitle">Господа выбранный нами инновационный путь создает предпосылки.</p>
         </header>
 
@@ -28,16 +27,25 @@
 
 <section class="section">
     <div class="container">
-        <h2 class="section__h2">Наши услуги</h2>
 
-        <button type="button" class="btn btn-main">Оставить заявку</button>
+        <header class="section-header">
+            <h2 class="section-header__title">Наши рекомендации</h2>
+            <p class="section-header__subtitle">Господа выбранный нами инновационный путь создает предпосылки.</p>
+        </header>
+
     </div>
 </section>
+
 <section class="section">
     <div class="container">
-        <h2 class="section__h2">Наши услуги</h2>
+
+        <header class="section-header">
+            <h2 class="section-header__title">Наша команда</h2>
+            <p class="section-header__subtitle">Господа выбранный нами инновационный путь создает предпосылки.</p>
+        </header>
 
         <button type="button" class="btn btn-main">Оставить заявку</button>
+
     </div>
 </section>
 @endsection
