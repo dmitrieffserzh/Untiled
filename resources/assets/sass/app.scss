@@ -276,7 +276,7 @@ body {
     & .btn-write {
       display: block;
       border: 1px Solid #0093ff;
-      padding: 0 0rem;
+      padding: 0;
       background: #0093ff;
       color: #fff;
       width: 100%;
@@ -288,7 +288,7 @@ body {
       height: 1.5rem;
     }
     &--active {
-      bottom: 0rem;
+      bottom: 0;
       visibility: visible;
     }
   }
