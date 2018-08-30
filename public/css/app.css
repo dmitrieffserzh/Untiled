@@ -7754,6 +7754,13 @@ h6 {
   text-transform: uppercase;
 }
 
+svg {
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  shape-rendering: geometricPrecision !important;
+}
+
 body {
   padding: 0;
   background: #fff;
@@ -7784,14 +7791,14 @@ body {
   display: inline-block;
   float: left;
   padding: 0;
-  margin: .5rem 0;
-  height: 2rem;
+  margin: .25rem 0;
+  height: 2.5rem;
   cursor: pointer;
 }
 
 .header__brand svg {
   float: left;
-  height: 2rem;
+  height: 2.5rem;
 }
 
 .header__brand svg .pink {
@@ -8026,11 +8033,12 @@ body {
   }
 
   .header__brand {
-    height: 1.5rem;
+    margin: .25rem 0;
+    height: 2.25rem;
   }
 
   .header__brand svg {
-    height: 1.5rem;
+    height: 2.25rem;
   }
 
   .header__contacts {
@@ -8038,12 +8046,18 @@ body {
   }
 
   .header__contacts svg {
-    height: 1.5rem;
+    height: 1.7rem;
   }
 
   .header--scroll {
     background: #fff;
     padding: .2rem 0;
+    -webkit-box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.05);
+            box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.05);
+  }
+
+  .header--scroll svg {
+    stroke: #000;
   }
 
   .header--scroll svg .black {
