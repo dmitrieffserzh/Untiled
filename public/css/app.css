@@ -7778,6 +7778,7 @@ body {
   top: 0;
   left: 0;
   right: 0;
+  border-top: 2px Solid rgba(0, 171, 255, 0.12);
   background: transparent;
   padding: 1rem 0;
   width: 100%;
@@ -7856,8 +7857,8 @@ body {
 .header--scroll {
   background: #fff;
   padding: .5rem 0;
-  -webkit-box-shadow: 0 0 0.25rem 5rem rgba(0, 0, 0, 0.05);
-          box-shadow: 0 0 0.25rem 5rem rgba(0, 0, 0, 0.05);
+  -webkit-box-shadow: 0 0 0.5rem 0 rgba(0, 0, 0, 0.05);
+          box-shadow: 0 0 0.5rem 0 rgba(0, 0, 0, 0.05);
 }
 
 .header--scroll svg {
@@ -7886,6 +7887,16 @@ body {
   padding: 3rem 0;
   width: 100%;
   min-height: 700px;
+}
+
+.section-header__title {
+  margin: 12rem 0 1rem;
+  font-size: 2rem;
+}
+
+.section-header__subtitle {
+  margin: 0 0 2rem;
+  width: 100%;
 }
 
 .section-main {
@@ -8067,17 +8078,22 @@ body {
 
   .header__contacts {
     margin: .5rem 0;
+    color: #000;
   }
 
   .header__contacts svg {
     height: 1.7rem;
   }
 
+  .header__contacts-callback {
+    color: #000;
+  }
+
   .header--scroll {
     background: #fff;
     padding: .2rem 0;
-    -webkit-box-shadow: 0 0 0.25rem 5rem rgba(0, 0, 0, 0.05);
-            box-shadow: 0 0 0.25rem 5rem rgba(0, 0, 0, 0.05);
+    -webkit-box-shadow: 0 0 0.5rem 0 rgba(0, 0, 0, 0.05);
+            box-shadow: 0 0 0.5rem 0 rgba(0, 0, 0, 0.05);
   }
 
   .header--scroll svg {
@@ -8097,7 +8113,7 @@ body {
     margin: 0 10%;
     width: 80%;
     text-align: center;
-    border-radius: 0 0 .3rem .3rem;
+    border-radius: .3rem .3rem 0 0;
   }
 
   .main-action .btn-main {
