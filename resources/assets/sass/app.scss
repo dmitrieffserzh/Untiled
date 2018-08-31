@@ -50,7 +50,6 @@ body {
   top: 0;
   left: 0;
   right: 0;
-  border-top: 2px Solid rgba(0, 171, 255, 0.12);
   background: transparent;
   padding: 1rem 0;
   width: 100%;
@@ -67,14 +66,14 @@ body {
     & svg {
       float: left;
       height: 2.5rem;
-    }
-    & svg .pink {
-      fill: #ff0063;
-      transition: all .2s;
-    }
-    & svg .black {
-      fill: #fff;
-      transition: all .2s;
+      & .pink {
+        fill: #ff0063;
+        transition: all .2s;
+      }
+      & .black {
+        fill: #fff;
+        transition: all .2s;
+      }
     }
   }
   &__contacts {
@@ -120,6 +119,16 @@ body {
     & svg .black {
       fill: #000;
       transition: all 0.2s;
+    }
+    &__contacts {
+      margin: .5rem 0;
+      color: #000 !important;
+      &-phone {
+        color: #000;
+      }
+      &-callback {
+        color: #000;
+      }
     }
   }
 }
@@ -324,7 +333,7 @@ body {
     }
     &__contacts {
       margin: .5rem 0;
-      color: #000;
+      color: #000 !important;
       & svg {
         height: 1.7rem;
       }

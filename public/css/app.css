@@ -7778,7 +7778,6 @@ body {
   top: 0;
   left: 0;
   right: 0;
-  border-top: 2px Solid rgba(0, 171, 255, 0.12);
   background: transparent;
   padding: 1rem 0;
   width: 100%;
@@ -7869,6 +7868,19 @@ body {
   fill: #000;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
+}
+
+.header--scroll__contacts {
+  margin: .5rem 0;
+  color: #000 !important;
+}
+
+.header--scroll__contacts-phone {
+  color: #000;
+}
+
+.header--scroll__contacts-callback {
+  color: #000;
 }
 
 .main-action__input {
@@ -8078,7 +8090,7 @@ body {
 
   .header__contacts {
     margin: .5rem 0;
-    color: #000;
+    color: #000 !important;
   }
 
   .header__contacts svg {
